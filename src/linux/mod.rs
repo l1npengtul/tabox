@@ -47,7 +47,7 @@ fn sigterm_handler() {
 }
 
 pub struct LinuxSandbox {
-    child_thread: JoinHandle<Result<SandboxExecutionResult>>,
+    pub child_thread: JoinHandle<Result<SandboxExecutionResult>>,
 }
 
 impl Sandbox for LinuxSandbox {
